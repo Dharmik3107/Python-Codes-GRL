@@ -34,6 +34,44 @@ newEvens = numbers[2:9:3]
 newNested = nested[::-1]
 print(newNested)
 
+#! Add elements into list
+#* append
+fruits.append("orange")
+print(fruits)
+
+#* extend 
+fruits.extend(["kiwi", "guvava"]);
+print(fruits)
+
+#* insert
+fruits.insert(2,"banana")
+print(fruits)
+
+#! Remove Elements from List
+
+#* Remove
+removed = fruits.remove("kiwi")
+print(fruits)
+print(removed)
+
+#* Pop
+# ? it returns removed element
+popped = fruits.pop()
+print(fruits)
+print(popped)
+
+fruits.pop(2)
+print(fruits)
+
+#* delete
+
+del fruits[2]
+print(fruits)
+
+#*clear
+fruits.clear();
+print(fruits)
+
 #! Tuple
 #* elements can not be changed
 fruitsTuple = ("apple", "banana", "Mango")
