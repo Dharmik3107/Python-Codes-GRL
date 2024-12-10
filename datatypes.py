@@ -72,9 +72,73 @@ print(fruits)
 fruits.clear();
 print(fruits)
 
+#! Finding and Counting Elements
+nums = [1,2,3,4,5,5,5,6,7,5,6,7,5]
+#* Finding
+print(nums.index(5))
+
+#* Counting
+print(nums.count(5))
+
+#! Sorting and Filtering
+
+#* Sorting
+nums.sort()
+print(nums)
+
+#* Reversing
+nums.reverse()
+print(nums)
+
+#! Copying List
+numsCopied = nums.copy()
+numsCopied.append(5)
+print(numsCopied)
+
+#! Common list operations
+numsCopied = numsCopied + nums.copy()
+
+num1 = [1,2,3,4,5]
+num2 = [6,7,8,9]
+
+# num1 += num2.copy()
+# print(num1)
+
+#! Repeated 
+num2 = num1 * 5
+print(num2)
+
+#! Membership Test
+#* To test a element existance in a list
+print(4 in num1);
+print(7 in num1)
+
+#! Length check
+print(len(num1))
+
 #! Tuple
 #* elements can not be changed
 fruitsTuple = ("apple", "banana", "Mango")
+
+#! Empty Tuple
+myTuple = ()
+
+#! Single Element Tuple
+#* Trailling Comma is important
+myTupleS = (5,)
+
+#! Mixed Data type
+myTupleM = ("apple", 2, "Mango")
+
+#! Nest Tuple 
+#* Nested list in tuple is also allowed
+myTupleN = (1, (2,3), 4, [4,5])
+
+#!Implicit Tuple
+#* Python will automatically recognize a tuple using commas.
+x = 1,2,3
+
+#! All same methods as list can be applied in tuple except adding ,changing and removing elemnts (it means elements can not be changed)
 
 #! Range
 startingNumbers = range(1,10)
