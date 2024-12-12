@@ -16,14 +16,14 @@ fruits = ["apple", "banana", "Mango"]
 #* Nested List
 nested = ["apple", ["banana", "grapes"], "watermelon"]
 
-print(nested[0]) #apple
-print(nested[1]) #["banana", "grapes"]
-print(nested[1][0]) #banana
+# print(nested[0]) #apple
+# print(nested[1]) #["banana", "grapes"]
+# print(nested[1][0]) #banana
 
 numbers = [0,1,2,3,4,5,6,7,8,9,10]
 
 nested[1][1] = "pineapple"
-print(nested[1][1]) #pineapple
+# print(nested[1][1]) #pineapple
 
 # ? Slicing
 #[start : end : step]
@@ -32,68 +32,68 @@ newNested = nested[::2]
 
 newEvens = numbers[2:9:3]
 newNested = nested[::-1]
-print(newNested)
+# print(newNested)
 
 #! Add elements into list
 #* append
 fruits.append("orange")
-print(fruits)
+# print(fruits)
 
 #* extend 
 fruits.extend(["kiwi", "guvava"]);
-print(fruits)
+# print(fruits)
 
 #* insert
 fruits.insert(2,"banana")
-print(fruits)
+# print(fruits)
 
 #! Remove Elements from List
 
 #* Remove
 removed = fruits.remove("kiwi")
-print(fruits)
-print(removed)
+# print(fruits)
+# print(removed)
 
 #* Pop
 # ? it returns removed element
 popped = fruits.pop()
-print(fruits)
-print(popped)
+# print(fruits)
+# print(popped)
 
 fruits.pop(2)
-print(fruits)
+# print(fruits)
 
 #* delete
 
 del fruits[2]
-print(fruits)
+# print(fruits)
 
 #*clear
 fruits.clear();
-print(fruits)
+# print(fruits)
 
 #! Finding and Counting Elements
 nums = [1,2,3,4,5,5,5,6,7,5,6,7,5]
 #* Finding
-print(nums.index(5))
+# print(nums.index(5))
 
 #* Counting
-print(nums.count(5))
+# print(nums.count(5))
 
 #! Sorting and Filtering
 
 #* Sorting
 nums.sort()
-print(nums)
+# print(nums)
 
 #* Reversing
 nums.reverse()
-print(nums)
+# print(nums)
 
 #! Copying List
 numsCopied = nums.copy()
 numsCopied.append(5)
-print(numsCopied)
+# print(numsCopied)
 
 #! Common list operations
 numsCopied = numsCopied + nums.copy()
@@ -106,15 +106,15 @@ num2 = [6,7,8,9]
 
 #! Repeated 
 num2 = num1 * 5
-print(num2)
+# print(num2)
 
 #! Membership Test
 #* To test a element existance in a list
-print(4 in num1);
-print(7 in num1)
+# print(4 in num1);
+# print(7 in num1)
 
 #! Length check
-print(len(num1))
+# print(len(num1))
 
 #! Tuple
 #* elements can not be changed
@@ -138,16 +138,56 @@ myTupleN = (1, (2,3), 4, [4,5])
 #* Python will automatically recognize a tuple using commas.
 x = 1,2,3
 
-#! All same methods as list can be applied in tuple except adding ,changing and removing elemnts (it means elements can not be changed)
+#! Destructuring
+y = (1,2,3)
+a,b,c = y
+# print(a)
 
-#! Range
-startingNumbers = range(1,10)
+#! All same methods as list can be applied in tuple except adding ,changing and removing elemnts (it means elements can not be changed)
 
 #! Dictionary
 #*{key1:value1,key2:value2,...}
 #* Key should not include 
 myData = {"name":"Aksh", "age":17, "isMinor":True}
-# print(myData["isMinor"])
+print(myData["isMinor"])
+
+#? dict() constructor
+myDict = dict(name="Aksh",age=25)
+print(myDict)
+
+#? List of Tuples
+tupledList = [("name","Dharmik"),("age","32")]
+tupledDict = dict(tupledList)
+print(tupledDict)
+myName = tupledDict.get("name","Wrong Spelling")
+print(myName)
+
+#!Changing Values using keys
+myDict["name"] = "Darsh"
+
+#! Adding New Pair using above method
+myDict["result"] = 89
+print(myDict)
+
+#! Diff b/w pop and popItem
+# print(myDict.pop()) #error
+print(myDict.popitem()) #last inserted item
+#! Clearing Dictionary
+myDict.clear()
+print(myDict)
+
+myNum1 = {"num1":1}
+myNum2 = {"num2":2}
+myNum3 = {"num3":3}
+myNum4 = {"num4":4}
+
+myNum1.update(myNum2)
+mergedSecond = myNum3 | myNum4
+print(myNum1)
+print(mergedSecond)
+#! Range
+startingNumbers = range(1,10)
+
 
 #! Sets
 #* Its mutable (elements can be changed) and contain unique elements
