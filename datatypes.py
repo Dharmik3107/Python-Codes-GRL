@@ -186,8 +186,10 @@ mergedSecond = myNum3 | myNum4
 print(myNum1)
 print(mergedSecond)
 #! Range
-startingNumbers = range(1,10)
-
+#? range(start, end, step)
+startingNumbers = list(range(1,10))
+startingNumbers = tuple(range(1,10))
+print(startingNumbers)
 
 #! Sets
 #* Its mutable (elements can be changed) and contain unique elements
