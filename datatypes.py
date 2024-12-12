@@ -195,6 +195,38 @@ print(startingNumbers)
 #* Its mutable (elements can be changed) and contain unique elements
 vegetables = {"tomato", "carrot", "beet"}
 
+#? Empty Set
+emptySet = {}
+
+#? Set constructor
+fromString = set("akkkkssssh");
+print(fromString)
+
+numbers = list(range(0,10))
+numSet = set(numbers)
+print(numSet)
+
+fromRange = set(range(0,5))
+print(fromRange)
+
+numFirst = {1,2,3}
+numSecond = {3,4,5}
+
+#? Union ( | )
+print(numFirst | numSecond)
+
+#? Intersection ( & )
+print(numFirst & numSecond)
+
+#? First Diff ( Left Diff = left - right)
+print(numFirst - numSecond)
+
+#? Second Diff ( Right Diff = Right - Left)
+print(numSecond - numFirst)
+
+#? Symmetric Diff
+print(numFirst ^ numSecond)
+
 #! Frozen Sets
 #* It makes set immutable
 frozenVegetables = frozenset(["tomato", "carrot", "beet"])
