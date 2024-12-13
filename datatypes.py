@@ -290,7 +290,7 @@ print(len(mySetTwo))
 print(2 in mySetTwo)
 print(2 not in mySetThree)
 
-#? Finding maximum and minimum from set\
+#? Finding maximum and minimum from set
 print(max(mySetTwo))
 print(min(mySetTwo))
 
