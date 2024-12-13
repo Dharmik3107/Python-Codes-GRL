@@ -256,6 +256,47 @@ print(mySet)
 #? Clear
 mySet.clear()
 print(mySet)
+
+#! Set Comparison
+mySetOne = {1,2}
+mySetTwo = {2,3,4}
+mySetThree = {2,1}
+
+#? Subset ( <= ) #Both set can be equal
+print(mySetOne <= mySetTwo)
+print(mySetOne <= mySetThree)
+
+#? Subset ( < ) #Both set can't be equal
+print(mySetOne < mySetTwo)
+print(mySetOne < mySetThree)
+
+#? Superset #Both set can't be equal
+print (mySetTwo > mySetOne)
+print (mySetThree > mySetOne)
+
+#? Superset #Both set can be equal
+print (mySetTwo >= mySetOne)
+print (mySetThree >= mySetOne)
+
+#? Equality
+print(mySetOne == mySetTwo)
+print(mySetOne == mySetThree)
+
+#! built in Functions
+#? len
+print(len(mySetTwo))
+
+#? Member Existance Check
+print(2 in mySetTwo)
+print(2 not in mySetThree)
+
+#? Finding maximum and minimum from set\
+print(max(mySetTwo))
+print(min(mySetTwo))
+
+#? Finding sum of set elements
+print(sum(mySetTwo))
+
 #! Frozen Sets
 #* It makes set immutable
 frozenVegetables = frozenset(["tomato", "carrot", "beet"])
