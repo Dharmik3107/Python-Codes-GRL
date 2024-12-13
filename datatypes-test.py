@@ -4,11 +4,10 @@
 
 # Question 2: Strings
 # Extract and print the first three characters and the last three characters from the string:
-
-
 # python
 # Copy code
 # text = "HelloPythonWorld"
+
 # Question 3: Booleans
 # Given the numbers x = 25 and y = 50, check if x is half of y. Print the result as a Boolean value.
 
@@ -27,8 +26,6 @@
 
 # Question 7: Sets
 # Given the sets:
-
-
 # python
 # Copy code
 # set1 = {1, 2, 3, 4}
