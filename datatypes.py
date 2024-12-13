@@ -227,6 +227,35 @@ print(numSecond - numFirst)
 #? Symmetric Diff
 print(numFirst ^ numSecond)
 
+#! Set Methods
+#? Adding elements 
+mySet = {1,2,3}
+mySet.add(4)
+print(mySet)
+
+#? Update Elements
+mySet.update([4,5,6])
+# print(mySet)
+
+
+
+#? Remove Elements
+# mySet.remove(7) #Throws error if element does not exist
+# print(mySet)
+
+mySet.discard(7) #Don't throw any error if element does not exist
+# print(mySet)
+
+#?Pop Methods
+popped = mySet.pop()
+print(popped)
+popped = mySet.pop()
+print(popped)
+print(mySet)
+
+#? Clear
+mySet.clear()
+print(mySet)
 #! Frozen Sets
 #* It makes set immutable
 frozenVegetables = frozenset(["tomato", "carrot", "beet"])
