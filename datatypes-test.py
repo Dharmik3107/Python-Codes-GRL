@@ -18,6 +18,8 @@
 
 # Question 5: Tuples
 # Create a tuple with the elements (1, 2, 3, 4, 5). Unpack the first two elements into variables a and b, and assign the rest of the elements to a list remaining. Print a, b, and remaining.
+myTuple = (1,2,3,4,5)
+a,b, *remaining = myTuple
 
 
 # Question 6: Dictionary

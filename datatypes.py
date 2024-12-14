@@ -298,11 +298,14 @@ print(min(mySetTwo))
 print(sum(mySetTwo))
 
 #! Frozen Sets
-#* It makes set immutable
+#* It makes set immutable means you can't add or remove or change any element of frozenset. All otber operations are allowed as same as sets
 frozenVegetables = frozenset(["tomato", "carrot", "beet"])
 
 #! None
 #* Intention value absence
 myAge = None
+
+
+
 
 
