@@ -50,7 +50,9 @@ else:
         print(False)
 
 fruits = ["apple", "banana", "mango"]
-fruit = input("Enter Your Fruit Name")
+
+#! User input Method - input(statement)
+fruit = input("Enter Your Fruit Name:")
 
 if fruit in fruits:
     print(True)
