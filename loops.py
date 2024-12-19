@@ -69,10 +69,39 @@ for index, mark in enumerate(marks):
 
 
 #! While
+# while condition:
+#     code
 
-#!range()
+count = 0;
+while count < 5:
+    print("Count is: ", count)
+    count += 1
 
 
 
+a = 0;
+b = 5;
 
+# while a < 6 and b >= 0:
+#     if(a == 4): break
+#     if(b == 2): continue
+#     print(a,b)
+#     a += 1
+#     b -= 1
+# else:
+#     print("Loops Finised")
+
+counter = 0
+flag = True
+
+while flag:
+    print(counter)
+    if(counter == 4): flag = False
+    counter += 1
+else:
+    print("Loop finished")
 #* Infinite Loops
+# while True:
+#     print(True)
+    # no break statement in code
+#!range()

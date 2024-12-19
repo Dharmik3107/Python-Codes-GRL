@@ -44,6 +44,9 @@
 # Star Pattern
 # Write a for loop to print the following pattern:
 
+# for i in range(1,101):
+#     if(i % 3 == 0 and i % 5 == 0): print(i)
+
 # markdown
 # Copy code
 # *
@@ -59,6 +62,9 @@
 
 # Perfect Square Numbers
 # Write a program to print all perfect square numbers between 1 and 100.
+# for num in range(1,101):
+#     for div in range(1,11):
+#         if(num / div == div): print(num)
 
 # Sum of Series
 # Calculate the sum of the series:
@@ -90,3 +96,34 @@
 # 1 2 3
 # 1 2 3 4
 # 1 2 3 4 5
+
+
+# Countdown Timer:
+# Write a program using a while loop to count down from a user-specified number to 0 and print each number.
+
+# Input Validation:
+# Use a while loop to repeatedly ask the user to input a positive number. If the input is not positive, prompt the user again until a valid input is given.
+
+# Sum of Numbers:
+# Write a program that keeps taking integer inputs from the user and adds them to a sum. Stop the loop when the user enters 0 and print the final sum.
+
+# Digit Counter:
+# Write a program that takes a positive integer as input and uses a while loop to count and print the number of digits in the number.
+
+# Reverse a Number:
+# Write a program that takes an integer and uses a while loop to reverse its digits. Print the reversed number.
+
+# Find First Divisible Number:
+# Use a while loop to find the smallest number greater than a given number n that is divisible by both 3 and 5.
+
+# Guess the Number:
+# Create a program where the user guesses a secret number. Use a while loop to repeatedly prompt the user until they guess correctly.
+
+# Fibonacci Sequence Generator:
+# Use a while loop to generate the first n numbers of the Fibonacci sequence, where n is provided by the user.
+
+# Factorial Calculation:
+# Write a program that calculates the factorial of a number using a while loop. The user provides the number.
+
+# Sum of Digits:
+# Write a program that takes a positive integer as input and uses a while loop to calculate the sum of its digits. Print the result.
